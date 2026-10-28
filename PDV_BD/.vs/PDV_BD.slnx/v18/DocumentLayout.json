@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MrSnow\\Downloads\\Tienda\\PDV_BD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF263D11-9273-2344-B2E8-FD8C91D7CCB0}|PDV_BD\\PDV_BD.csproj|c:\\users\\mrsnow\\downloads\\tienda\\pdv_bd\\pdv_bd\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF263D11-9273-2344-B2E8-FD8C91D7CCB0}|PDV_BD\\PDV_BD.csproj|solutionrelative:pdv_bd\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF263D11-9273-2344-B2E8-FD8C91D7CCB0}|PDV_BD\\PDV_BD.csproj|c:\\users\\mrsnow\\downloads\\tienda\\pdv_bd\\pdv_bd\\pdv_bd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF263D11-9273-2344-B2E8-FD8C91D7CCB0}|PDV_BD\\PDV_BD.csproj|solutionrelative:pdv_bd\\pdv_bd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 250,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PDV_BD.csproj",
+              "DocumentMoniker": "C:\\Users\\MrSnow\\Downloads\\Tienda\\PDV_BD\\PDV_BD\\PDV_BD.csproj",
+              "RelativeDocumentMoniker": "PDV_BD\\PDV_BD.csproj",
+              "ToolTip": "C:\\Users\\MrSnow\\Downloads\\Tienda\\PDV_BD\\PDV_BD\\PDV_BD.csproj",
+              "RelativeToolTip": "PDV_BD\\PDV_BD.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-28T16:27:37.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MrSnow\\Downloads\\Tienda\\PDV_BD\\PDV_BD\\Form1.cs",
+              "RelativeDocumentMoniker": "PDV_BD\\Form1.cs",
+              "ToolTip": "C:\\Users\\MrSnow\\Downloads\\Tienda\\PDV_BD\\PDV_BD\\Form1.cs [Design]",
+              "RelativeToolTip": "PDV_BD\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T16:21:59.539Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 736,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
