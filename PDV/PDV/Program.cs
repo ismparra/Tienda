@@ -1,4 +1,4 @@
-namespace PDV_BD
+namespace PDV
 {
     internal static class Program
     {

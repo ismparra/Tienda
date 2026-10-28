@@ -1,4 +1,4 @@
-namespace PDV_BD
+namespace PDV
 {
     public partial class Form1 : Form
     {

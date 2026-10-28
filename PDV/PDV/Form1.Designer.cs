@@ -1,4 +1,4 @@
-﻿namespace PDV_BD
+﻿namespace PDV
 {
     partial class Form1
     {
@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            components = new System.ComponentModel.Container();
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 495);
-            Name = "Form1";
+            ClientSize = new Size(800, 450);
             Text = "Form1";
-            ResumeLayout(false);
         }
 
         #endregion

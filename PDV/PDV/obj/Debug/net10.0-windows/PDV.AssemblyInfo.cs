@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PDV_BD")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PDV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74dbed9d1d5277b5cd2aa5b3f7b5fdc34555710d")]
-[assembly: System.Reflection.AssemblyProductAttribute("PDV_BD")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PDV_BD")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d83f8deddcf2d92cfea8a4d7fffa83dc6620619f")]
+[assembly: System.Reflection.AssemblyProductAttribute("PDV")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PDV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
