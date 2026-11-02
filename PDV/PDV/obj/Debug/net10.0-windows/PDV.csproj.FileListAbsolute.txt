@@ -35,3 +35,4 @@ C:\Users\Ismael\Documents\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.genruntim
 C:\Users\Ismael\Documents\Tienda\PDV\PDV\obj\Debug\net10.0-windows\ref\PDV.dll
 C:\Users\Ismael\Documents\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.csproj.Up2Date
 C:\Users\Ismael\Documents\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.Properties.Resources.resources
+C:\Users\MrSnow\OneDrive\Documents\Proyects\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.Properties.Resources.resources

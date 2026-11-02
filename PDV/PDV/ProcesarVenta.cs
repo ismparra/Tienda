@@ -36,31 +36,22 @@ namespace PDV
             ActualizarFechaHora();
             tmSystemDT.Interval = (60 - DateTime.Now.Second) * 1000;
             tmSystemDT.Start();
+            dvProducts.AutoGenerateColumns = true;
         }
         //Timer
         private void tmSystemDT_Tick(object sender, EventArgs e) =>
             ActualizarFechaHora();
         private void btnBuy_Click(object sender, EventArgs e)
         {
-
+            //Llamar al metodo que se encarga de la base de datos
         }
         private void btnAdd_Click(object sender, EventArgs e) =>
             AgregarProducto();
+        private void btnExit_Click(object sender, EventArgs e) =>
+            Environment.Exit(0);
+        private void btnMinimizar_Click(object sender, EventArgs e) =>
+            this.WindowState = FormWindowState.Minimized;
         #endregion
 
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFecha_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
     }
 }

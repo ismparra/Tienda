@@ -22,8 +22,11 @@ public class Product
 
 public class DetalleVenta
 {
-    public int Cant;
+    public int Cant { get; private set; }
     public Product Product;
+    public string Nombre => Product.Nombre;
+    public float Precio => Product.Precio;
+    public float Importe => Cant * Product.Precio;
     public DetalleVenta(int c, Product p)
     {
         Cant = c;

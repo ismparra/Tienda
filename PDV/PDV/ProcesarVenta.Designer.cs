@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             grpHeader = new GroupBox();
+            btnExit = new Button();
             lblFecha = new Label();
             lblHora = new Label();
             label1 = new Label();
@@ -51,6 +52,7 @@
             label6 = new Label();
             label7 = new Label();
             button1 = new Button();
+            btnMinimizar = new Button();
             grpHeader.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -60,6 +62,8 @@
             // grpHeader
             // 
             grpHeader.BackColor = Color.MidnightBlue;
+            grpHeader.Controls.Add(btnMinimizar);
+            grpHeader.Controls.Add(btnExit);
             grpHeader.Controls.Add(lblFecha);
             grpHeader.Controls.Add(lblHora);
             grpHeader.Controls.Add(label1);
@@ -72,10 +76,23 @@
             grpHeader.TabIndex = 3;
             grpHeader.TabStop = false;
             // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Crimson;
+            btnExit.FlatStyle = FlatStyle.Popup;
+            btnExit.ForeColor = Color.Azure;
+            btnExit.Location = new Point(1417, 29);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(44, 41);
+            btnExit.TabIndex = 11;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
+            // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(993, 35);
+            lblFecha.Location = new Point(687, 41);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(277, 32);
             lblFecha.TabIndex = 3;
@@ -84,7 +101,7 @@
             // lblHora
             // 
             lblHora.AutoSize = true;
-            lblHora.Location = new Point(1337, 36);
+            lblHora.Location = new Point(1030, 41);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(108, 32);
             lblHora.TabIndex = 2;
@@ -93,7 +110,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(475, 36);
+            label1.Location = new Point(440, 41);
             label1.Name = "label1";
             label1.Size = new Size(123, 32);
             label1.TabIndex = 1;
@@ -103,7 +120,7 @@
             // 
             lblNegocio.AutoSize = true;
             lblNegocio.Font = new Font("Algerian", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNegocio.Location = new Point(58, 36);
+            lblNegocio.Location = new Point(58, 42);
             lblNegocio.Name = "lblNegocio";
             lblNegocio.Size = new Size(245, 31);
             lblNegocio.TabIndex = 0;
@@ -229,7 +246,7 @@
             btnBuy.FlatStyle = FlatStyle.Flat;
             btnBuy.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBuy.ForeColor = SystemColors.Control;
-            btnBuy.Location = new Point(1332, 157);
+            btnBuy.Location = new Point(1305, 159);
             btnBuy.Name = "btnBuy";
             btnBuy.Size = new Size(112, 34);
             btnBuy.TabIndex = 5;
@@ -285,6 +302,20 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += btnAdd_Click;
             // 
+            // btnMinimizar
+            // 
+            btnMinimizar.BackColor = Color.DarkTurquoise;
+            btnMinimizar.FlatStyle = FlatStyle.Popup;
+            btnMinimizar.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold);
+            btnMinimizar.ForeColor = Color.Azure;
+            btnMinimizar.Location = new Point(1367, 29);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(44, 41);
+            btnMinimizar.TabIndex = 12;
+            btnMinimizar.Text = "-";
+            btnMinimizar.UseVisualStyleBackColor = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            // 
             // ProcesarVenta
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -294,9 +325,9 @@
             Controls.Add(button1);
             Controls.Add(label7);
             Controls.Add(label6);
+            Controls.Add(btnBuy);
             Controls.Add(txtCant);
             Controls.Add(txtID);
-            Controls.Add(btnBuy);
             Controls.Add(panel1);
             Controls.Add(grpHeader);
             FormBorderStyle = FormBorderStyle.None;
@@ -338,5 +369,7 @@
         private Label label6;
         private Label label7;
         private Button button1;
+        private Button btnExit;
+        private Button btnMinimizar;
     }
 }
