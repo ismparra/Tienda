@@ -49,3 +49,16 @@ C:\Users\MrSnow\OneDrive\Documents\Proyects\Tienda\PDV\PDV\bin\Debug\net10.0-win
 C:\Users\MrSnow\OneDrive\Documents\Proyects\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\krb5_64.dll
 C:\Users\MrSnow\OneDrive\Documents\Proyects\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\MrSnow\OneDrive\Documents\Proyects\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.csproj.AssemblyReference.cache
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\Google.Protobuf.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\MySql.Data.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\ZstdSharp.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Ismael\Documents\Tienda\PDV\PDV\obj\Debug\net10.0-windows\PDV.csproj.AssemblyReference.cache

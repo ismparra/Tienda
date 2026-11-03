@@ -9,14 +9,19 @@ namespace PDV
         public Label LblSubtotal => this.lblSubtotal;
         public Label LblIVA => this.lblIVA;
         public Label LblTotal => this.lblTotal;
+        int orden;
+        string Orden() => "Order: #" + (orden < 10 && orden > 0 ? "0" + orden : orden.ToString());
 
         public BindingList<DetalleVenta> detalles { get; private set; } = new();
         public ProcesarVenta()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
+            btnExit.BringToFront();
+            btnMinimizar.BringToFront();
             Conection.CargarProductos();
-            int orden = Conection.ObtenerSiguienteVenta();
-            lblOrden.Text = "Order: #" + (orden < 10 && orden > 0 ? "0" + orden : orden.ToString());
+            orden = Conection.ObtenerSiguienteVenta();
+            lblOrden.Text = Orden();
             dvProducts.DataSource = detalles;
             Products.Instace.LstProduct.Add(new("7508310245041", "Hojas", 22, 10));
             DataGridViewButtonColumn btnEliminar = new DataGridViewButtonColumn();
@@ -46,7 +51,25 @@ namespace PDV
             ActualizarFechaHora();
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            //Llamar al metodo que se encarga de la base de datos
+            if (detalles.Count == 0)
+            {
+                MessageBox.Show("Agrega al menos un producto a la venta.", "Venta vacía", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                int idVenta = Conection.RegistrarVenta(detalles);
+                detalles.Clear();
+                this.CalcularTotal();
+                MessageBox.Show($"Venta #{idVenta} registrada correctamente.", "Venta registrada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                orden++;
+                lblOrden.Text = Orden();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"No se pudo registrar la venta: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void btnAdd_Click(object sender, EventArgs e) =>
             this.AgregarProducto();
