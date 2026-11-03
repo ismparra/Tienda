@@ -3,32 +3,35 @@ namespace PDV
 {
     public partial class ProcesarVenta : Form
     {
-        BindingList<DetalleVenta> detalles = new();
+
+        public TextBox TxtCant => this.txtCant;
+        public TextBox TxtID => this.txtID;
+        public Label LblSubtotal => this.lblSubtotal;
+        public Label LblIVA => this.lblIVA;
+        public Label LblTotal => this.lblTotal;
+
+        public BindingList<DetalleVenta> detalles { get; private set; } = new();
         public ProcesarVenta()
         {
             InitializeComponent();
+            Conection.CargarProductos();
+            int orden = Conection.ObtenerSiguienteVenta();
+            lblOrden.Text = "Order: #" + (orden < 10 && orden > 0 ? "0" + orden : orden.ToString());
             dvProducts.DataSource = detalles;
-            Products.Instace.LstProduct.Add(new("7508310245041", "Hojas", 22));
+            Products.Instace.LstProduct.Add(new("7508310245041", "Hojas", 22, 10));
+            DataGridViewButtonColumn btnEliminar = new DataGridViewButtonColumn();
+            btnEliminar.Name = "Eliminar";
+            btnEliminar.HeaderText = "";
+            btnEliminar.Text = "🗑";
+            btnEliminar.UseColumnTextForButtonValue = true;
+            btnEliminar.DefaultCellStyle.BackColor = Color.Firebrick;
+            dvProducts.Columns.Add(btnEliminar);
+            dvProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         public void ActualizarFechaHora()
         {
             lblHora.Text = DateTime.Now.ToString("HH:mm");
             lblFecha.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
-        }
-        public void AgregarProducto()
-        {
-            var p = Products.Instace.LstProduct.Find(x => x.Clave == txtID.Text);
-            if (p != null)
-            {
-                int cant = 0;
-                if (txtCant.Text == string.Empty) cant = 1;
-                else if (int.TryParse(txtCant.Text, out int c))
-                    cant = c;
-                else return; //Mandar error
-                detalles.Add(new(cant, p));
-            }
-            txtID.Text = string.Empty;
-            txtID.Focus();
         }
         #region Events
         private void ProcesarVenta_Load(object sender, EventArgs e)
@@ -46,12 +49,32 @@ namespace PDV
             //Llamar al metodo que se encarga de la base de datos
         }
         private void btnAdd_Click(object sender, EventArgs e) =>
-            AgregarProducto();
+            this.AgregarProducto();
         private void btnExit_Click(object sender, EventArgs e) =>
             Environment.Exit(0);
         private void btnMinimizar_Click(object sender, EventArgs e) =>
             this.WindowState = FormWindowState.Minimized;
+        private void dvProducts_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            if (dvProducts.Columns[e.ColumnIndex].Name == "Eliminar")
+            {
+                DetalleVenta producto = (DetalleVenta)dvProducts.Rows[e.RowIndex].DataBoundItem!;
+                producto.Cant--;
+                if (producto.Cant <= 0)
+                {
+                    dvProducts.Rows.RemoveAt(e.RowIndex);
+                }
+                dvProducts.Refresh();
+                this.CalcularTotal();
+            }
+        }
+        private void txtID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                this.AgregarProducto();
+        }
         #endregion
-
     }
 }

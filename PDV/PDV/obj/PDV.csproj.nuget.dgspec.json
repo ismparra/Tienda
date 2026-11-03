@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ismael\\Documents\\Tienda\\PDV\\PDV\\PDV.csproj": {}
+    "C:\\Users\\MrSnow\\OneDrive\\Documents\\Proyects\\Tienda\\PDV\\PDV\\PDV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ismael\\Documents\\Tienda\\PDV\\PDV\\PDV.csproj": {
+    "C:\\Users\\MrSnow\\OneDrive\\Documents\\Proyects\\Tienda\\PDV\\PDV\\PDV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ismael\\Documents\\Tienda\\PDV\\PDV\\PDV.csproj",
+        "projectUniqueName": "C:\\Users\\MrSnow\\OneDrive\\Documents\\Proyects\\Tienda\\PDV\\PDV\\PDV.csproj",
         "projectName": "PDV",
-        "projectPath": "C:\\Users\\Ismael\\Documents\\Tienda\\PDV\\PDV\\PDV.csproj",
-        "packagesPath": "C:\\Users\\Ismael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ismael\\Documents\\Tienda\\PDV\\PDV\\obj\\",
+        "projectPath": "C:\\Users\\MrSnow\\OneDrive\\Documents\\Proyects\\Tienda\\PDV\\PDV\\PDV.csproj",
+        "packagesPath": "C:\\Users\\MrSnow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MrSnow\\OneDrive\\Documents\\Proyects\\Tienda\\PDV\\PDV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ismael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MrSnow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,6 +52,12 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[26.10.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -71,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
